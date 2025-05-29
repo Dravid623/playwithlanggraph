@@ -1,0 +1,28 @@
+{
+  "name": "demo2-incident",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+        "dev": "npm run build && node dist/index.js",
+        "dev:tcs": "npm run build && node dist/tcs.js",
+        "dev:test": "npm run build && node dist/graphTestVDB.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/community": "^0.3.42",
+    "@langchain/core": "^0.3.55",
+    "@langchain/langgraph": "^0.2.71",
+    "@langchain/ollama": "^0.2.0",
+    "@langchain/openai": "^0.5.10",
+    "@langchain/pinecone": "^0.2.0",
+    "@pinecone-database/pinecone": "^5.1.2",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.25",
+    "langsmith": "^0.3.24"
+  }
+}
